@@ -141,7 +141,7 @@
 								</div>
 							</div>
 							<ul class="actions">
-								<li><a href="#" class="button">Send Message</a></li>
+								<li><a href="#" id ="msg" class="button">Send Message</a></li>
 							</ul>
 						</form>
 					</section>
@@ -193,7 +193,7 @@
 	</script>
 	<script type="text/javascript">
 		document.addEventListener('DOMContentLoaded', function () {
-			document.querySelector('.submit').addEventListener('click', function (event) {
+			document.getElementById('msg').addEventListener('click', function (event) {
 				event.preventDefault();
 
 				var name = document.getElementById('name').value;
